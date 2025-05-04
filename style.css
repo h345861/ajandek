@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #fffdf8;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    width: 200px;
+    background: #f3e8dc;
+    padding: 1rem;
+    overflow-y: auto;
+    border-right: 2px solid #d1bfa3;
+}
+
+aside button {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    background: #e8d5bc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+aside button.disabled {
+    background: #ccc;
+    color: #888;
+    cursor: not-allowed;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+#showQuote {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #d1bfa3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#quoteBox {
+    margin-top: 2rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#quoteBox.visible {
+    opacity: 1;
+}
+
+#quoteText {
+    font-size: 22px;
+    margin-bottom: 1rem;
+}
+
+#quoteAuthor {
+    font-style: italic;
+    color: #666;
+}

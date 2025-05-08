@@ -1,8 +1,8 @@
 body {
     margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #fffdf8;
-    color: #333;
+    font-family: 'Times New Roman', serif;
+    background-color: palegoldenrod;
+    color: black;
 }
 
 .container {
@@ -12,10 +12,10 @@ body {
 
 aside {
     width: 200px;
-    background: #f3e8dc;
+    background: #0f400f;
     padding: 1rem;
     overflow-y: auto;
-    border-right: 2px solid #d1bfa3;
+    border-right: 2px solid seagreen;
 }
 
 aside button {
@@ -24,14 +24,19 @@ aside button {
     padding: 8px;
     width: 100%;
     border: none;
-    background: #e8d5bc;
+    background: #08813e;
     border-radius: 5px;
     cursor: pointer;
+    color: white;
+}
+
+aside button:hover{
+    background-color: #249f1f;
 }
 
 aside button.disabled {
-    background: #ccc;
-    color: #888;
+    background: #85daa4;
+    color: #578a67;
     cursor: not-allowed;
 }
 
@@ -39,22 +44,36 @@ main {
     flex: 1;
     padding: 2rem;
     text-align: center;
+
+    h1{
+        color: black;
+        background-color: palegoldenrod;
+        width: 45%;
+        margin: auto;
+    }
+
 }
 
 #showQuote {
+    margin-top: 4rem;
     padding: 12px 24px;
     font-size: 18px;
-    background-color: #d1bfa3;
+    background-color: #d59d44;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
+#showQuote:hover {
+    background-color: #ddbc83;
+}
 
 #quoteBox {
-    margin-top: 2rem;
+    margin-top: 6rem;
     opacity: 0;
     transition: opacity 0.5s ease;
+    justify-content: center;
+    align-items: center;
 }
 
 #quoteBox.visible {
@@ -69,4 +88,12 @@ main {
 #quoteAuthor {
     font-style: italic;
     color: #666;
+}
+
+.kep3{
+    position: absolute;
+
+    z-index: -1;
+    bottom: 0;
+    left: 45vh;
 }

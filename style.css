@@ -97,3 +97,77 @@ main {
     bottom: 0;
     left: 45vh;
 }
+@media (max-width: 768px) {
+
+    body {
+        color: #333;
+        font-family: 'Georgia', serif;
+        background-color: palegoldenrod;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    aside {
+        width: 100%;
+        background: #faf3e0;
+        border: none;
+        padding: 0.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    aside button {
+        background: #d4af37;
+        color: #000;
+        font-weight: bold;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin: 4px;
+    }
+
+    main {
+        padding: 2rem 1rem;
+        background-color: palegoldenrod;
+    }
+
+    main h1 {
+        font-size: 22px;
+        background: palegoldenrod;
+        padding: 10px;
+        border-radius: 10px;
+        width: 80%
+    }
+
+    #showQuote {
+        background: #e4c46f;
+        color: #000;
+        font-size: 16px;
+        padding: 10px 18px;
+        border-radius: 12px;
+    }
+
+    #quoteText {
+        font-size: 18px;
+    }
+
+    .kep3 {
+        display: none;
+    }
+    .container {
+        flex-direction: column;
+    }
+
+    main {
+        order: 1;
+    }
+
+    aside {
+        order: 2;
+    }
+
+}

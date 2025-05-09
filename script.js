@@ -1,4 +1,4 @@
-const weddingDate = new Date(2025, 3, 10);
+const weddingDate = new Date(2025, 4, 11);
 const today = new Date();
 const msPerDay = 1000 * 60 * 60 * 24;
 const daysSinceWedding = Math.floor((today - weddingDate) / msPerDay) + 1;
